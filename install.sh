@@ -47,11 +47,6 @@ function print_logo()
 	oh_my_zsh
 }
 
-#添加开机自启动
-function custom_open(){
-	echo 'aria2c --conf-path=/root/.aria2/aria2.conf -D' >> /etc/rc.local
-	echo '/etc/init.d/shadowsocks-r start' >> /etc/rc.local
-}
 #安装oh-my-zsh
 function oh_my_zsh(){
 	sudo apt install zsh -y
@@ -62,9 +57,14 @@ function oh_my_zsh(){
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	cp -f .zshrc ~/.zshrc
 }
-
+#添加开机自启动
+function custom_open(){
+	echo 'aria2c --conf-path=/root/.aria2/aria2.conf -D' >> /etc/rc.local
+	echo '/etc/init.d/shadowsocks-r start' >> /etc/rc.local
+	init 6
+}
 function main(){
-custom_vim
+	custom_vim
 #安装oh-my-zsh
 # oh_my_zsh
 # #安装vim依赖安装包,更新vim到最新版
