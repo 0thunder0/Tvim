@@ -1,7 +1,7 @@
 # tvim使用说明文档
-##安装流程说明:
+## 安装流程说明:
 
-###安装oh-my-zsh
+### 安装oh-my-zsh
 
 ```
 sudo apt install zsh -y
@@ -11,7 +11,7 @@ sudo apt install git -y
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-###安装vim依赖安装包,更新vim到最新版
+### 安装vim依赖安装包,更新vim到最新版
 
 ```
 sudo apt install tmux git tree python3-dev ctags build-essential cmake python-dev silversearcher-ag -y
@@ -20,13 +20,13 @@ sudo apt update -y
 sudo apt install vim -y
 ```
 
-###安装vim-plug
+### 安装vim-plug
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-###安装tvim配置
+### 安装tvim配置
 
 ```
 cp .vimrc ~/.vimrc -f
@@ -34,7 +34,7 @@ cp -f .zshrc ~/.zshrc
 cp -f .tmux.conf ~/.tmux.conf
 ```
 
-###添加开启自启动
+### 添加开启自启动
 
 ```
 echo 'aria2c --conf-path=/root/.aria2/aria2.conf -D' >> /etc/rc.d/rc.local
