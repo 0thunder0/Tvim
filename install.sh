@@ -21,8 +21,8 @@ function custom_tvim(){
 	cp -f .vimrc ~/.vimrc
 	cp -rf colors ~/.vim
 	vim -c ":PlugInstall" -c ":qa"
-	cd ~/.vim/plugged/YouCompleteMe
-	python3 install.py --clang-completer
+	#cd ~/.vim/plugged/YouCompleteMe
+	#python3 install.py --clang-completer
 	print_logo
 }
 # 打印logo
