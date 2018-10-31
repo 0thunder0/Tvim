@@ -159,6 +159,8 @@ let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 ```
 6.多行编辑插件：vim-multiple-cursors
+```
+```
 7.vim内重命名：rename.vim
 ```
 :rename[!] {newname}
@@ -170,3 +172,22 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2	#状态线隐藏/只出现在分割窗口中！
 set -g default-terminal "screen-256color"  #放在.tmux.conf
 ```
+9.多行注释插件：nerdcommenter快速注释
+```
+" 注释的时候自动加个空格, 强迫症必配
+let g:NERDSpaceDelims=1
+```
+### 使用
+```
+<leader>cc   加注释
+<leader>cu   解开注释
+<leader>c<space>  加上/解开注释, 智能判断
+<leader>cy   先复制, 再注解(p可以进行黏贴)
+```
+10.文本对齐插件：tabular
+
+将光标移动到第7行，输入 :Tab /{ 将会根据 "{" 对齐接下来的几行代码(貌似 tabular 可以自动识别"作用域"，只处理7 – 15 行之间的代码)，像这样： 
+第8行代码最长，所以会根据其"{" 调节其他代码行~ 还可以根据其他符号对齐，
+
+:Tab /[symbol_to_align]
+当然这种格式调整也要根据情况使用，有的时候也不一定能达到好的效果。
