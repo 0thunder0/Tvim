@@ -55,10 +55,11 @@ function oh_my_zsh(){
 	echo $SHELL
 	sudo apt install git -y
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	cp -f .zshrc ~/.zshrc
+	
 }
 #添加开机自启动
 function custom_open(){
+	cp -f .zshrc ~/.zshrc
 	echo 'aria2c --conf-path=/root/.aria2/aria2.conf -D' >> /etc/rc.local
 	echo '/etc/init.d/shadowsocks-r start' >> /etc/rc.local
 	init 6
