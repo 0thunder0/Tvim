@@ -40,7 +40,7 @@ function print_logo()
     echo ''
     echo ''
     echo 'Just enjoy it!'
-    echo 'p.s. Follow me at https://github.com/chxuan.'
+    echo 'p.s. Follow me at https://github.com/0thunder0/ztim.git.'
     echo ''
     printf "${normal}"
 
