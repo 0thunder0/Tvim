@@ -184,6 +184,9 @@ let g:NERDSpaceDelims=1
 <leader>cu   解开注释
 <leader>c<space>  加上/解开注释, 智能判断
 <leader>cy   先复制, 再注解(p可以进行黏贴)
+"将<Leader>密钥从\角色更改为更易于访问的,密钥
+let mapleader=","
+set timeout timeoutlen=1500
 ```
 10.文本对齐插件：tabular
 
