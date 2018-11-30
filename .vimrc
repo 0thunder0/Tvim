@@ -88,12 +88,3 @@ let g:multi_cursor_quit_key='<Esc>'
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\	
 set laststatus=2
-" 9.emmet基础用法
-1. E 代表HTML标签
-2. E#id 代表标签E有id属性
-3. E.class 代表E有class属性
-4. E[attr=foo] 代表某个特定属性
-5. E{info} 代表标签E包含的内容是info
-6. E>N 代表N是E的子元素
-7. E+N 代表N是E的同级元素
-8. E^N 代表N是E的上级元素
