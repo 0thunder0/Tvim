@@ -178,6 +178,7 @@ set -g default-terminal "screen-256color"  #放在.tmux.conf
 let g:NERDSpaceDelims=1
 ```
 ### 使用
+#### NERD_commenter定义的<Leader>cc映射，所以你按（一个接一个）\ C C。
 ```
 <leader>cc   加注释
 <leader>cu   解开注释
