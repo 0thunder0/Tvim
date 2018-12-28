@@ -20,7 +20,7 @@ set showmatch
 syntax enable
 "set background=light
 "colorscheme solarized
-colorscheme morning
+colorscheme default
 "主题设置
 "===================================================================="
 "插件设置
