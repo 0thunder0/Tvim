@@ -178,12 +178,14 @@ set -g default-terminal "screen-256color"  #放在.tmux.conf
 let g:NERDSpaceDelims=1
 ```
 ### 使用
-#### NERD_commenter定义的<Leader>cc映射，所以你按（一个接一个）\ C C。
+#### NERD_commenter定义的<Leader>cc映射，所以你按（一个接一个） \cc。
 ```
-<leader>cc   加注释
-<leader>cu   解开注释
-<leader>c<space>  加上/解开注释, 智能判断
-<leader>cy   先复制, 再注解(p可以进行黏贴)
+"默认状态下  <leader>  是 \
+\cc   当前行加注释
+\cu   解开当前行注释
+\c<space>  加上/解开注释, 智能判断
+\cy   先复制, 再注解(p可以进行黏贴)
+注：多行注释，前面加数字，  2\cc  给当前2行加注释
 "将<Leader>密钥从\角色更改为更易于访问的,密钥
 let mapleader=","
 set timeout timeoutlen=1500
