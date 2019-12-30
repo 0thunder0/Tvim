@@ -12,7 +12,7 @@ function custom_vim(){
 }
 #安装vim-plug
 function custom_vim_plug(){
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	curl -kfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	custom_tvim
 }
 
@@ -54,7 +54,7 @@ function oh_my_zsh(){
 	sudo chsh -s $(which zsh)
 	echo $SHELL
 	sudo apt install git -y
-	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	sh -c "$(curl -kfsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	
 }
 #添加开机自启动
